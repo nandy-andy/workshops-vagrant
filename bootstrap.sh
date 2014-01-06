@@ -82,8 +82,13 @@ then
 fi
 
 # installing Webgrind
-if [ ! -d /var/www/webgrind ];
+if [ ! -f /var/www/webgrind/index.php ];
 then
+  if [ ! -d /var/www/webgrind ];
+  then
+    mkdir /var/www/webgrind
+  fi
+  
   cp -r /vagrant/data/var/www/webgrind/* /vagrant/public/webgrind/
 fi
 
