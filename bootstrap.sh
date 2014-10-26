@@ -92,4 +92,12 @@ then
   cp -r /vagrant/data/var/www/webgrind/* /vagrant/public/webgrind/
 fi
 
+# cloning workshops repository
+cd /var/www/blog
+git clone https://github.com/nandy-andy/XVII-PP-workshops-2013.git
+cd /var/www/blog/XVII-PP-workshops-2013
+mv * .[^.]* ..
+cd /var/www/blog
+rm -rf /var/www/blog/XVII-PP-workshops-2013
+
 service apache2 restart
