@@ -22,6 +22,7 @@ Repository with vagrant package for workshops organized by Wikia and vendors.
 * PHP5
 * XDebug
 * Webgrind
+* node
 * npm
 
 ## Usage
