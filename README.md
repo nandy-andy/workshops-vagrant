@@ -32,4 +32,5 @@ Repository with vagrant package for workshops organized by Wikia and vendors.
 
 ## TODO
 - [ ] install memcached,
-- [ ] install memcached client
+- [ ] install memcached client,
+- [ ] after cloning blog application repo checkout workgate-2014 branch
