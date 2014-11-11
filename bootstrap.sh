@@ -93,6 +93,11 @@ then
 fi
 
 # cloning workshops repository
+if [ ! -d /var/www/blog ];
+then
+  mkdir /var/www/blog
+fi
+
 cd /var/www/blog
 git clone https://github.com/nandy-andy/XVII-PP-workshops-2013.git
 cd /var/www/blog/XVII-PP-workshops-2013
