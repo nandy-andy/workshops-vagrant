@@ -104,5 +104,6 @@ cd /var/www/blog/XVII-PP-workshops-2013
 mv * .[^.]* ..
 cd /var/www/blog
 rm -rf /var/www/blog/XVII-PP-workshops-2013
+git checkout workgate-2014
 
 service apache2 restart
