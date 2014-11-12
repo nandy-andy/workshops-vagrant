@@ -20,17 +20,11 @@ Repository with vagrant package for workshops organized by Wikia and vendors.
 * Apache2
 * MySQL
 * PHP5
+* Memcache(d)
 * XDebug
 * Webgrind
-* node
-* npm
 
 ## Usage
 
 * Run `vagrant ssh` to login to your development environment
 * Add `XDEBUG_PROFILE` parameter to `GET`/`POST`/`cookie` while visiting `127.0.0.1:8080` sites to generate cachegrind files which later you can analyze in `127.0.0.1:8080/webgrind/`
-
-## TODO
-- [x] install memcached,
-- [x] install memcached client,
-- [x] after cloning blog application repo checkout workgate-2014 branch
