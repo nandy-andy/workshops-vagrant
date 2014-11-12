@@ -11,7 +11,7 @@ sudo apt-get update
 sudo apt-get -y install mysql-server-5.5 php5-mysql 
 
 # installing Apache2 server, PHP5, memcache and Git...
-sudo apt-get -y install apache2 php5 libapache2-mod-php5 php5-memcache git
+sudo apt-get -y install apache2 php5 libapache2-mod-php5 php5-memcache memcached git
 
 # creating database and tables
 if [ ! -f /var/log/databasesetup ];
