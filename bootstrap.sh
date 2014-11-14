@@ -92,18 +92,10 @@ then
   cp -r /vagrant/data/var/www/webgrind/* /vagrant/public/webgrind/
 fi
 
-# cloning workshops repository
-if [ ! -d /var/www/blog ];
-then
-  mkdir /var/www/blog
-fi
-
+cd /var/www
+git clone https://github.com/nandy-andy/performance-blog.git
+mv performance-blog blog
 cd /var/www/blog
-git clone https://github.com/nandy-andy/XVII-PP-workshops-2013.git
-cd /var/www/blog/XVII-PP-workshops-2013
-mv * .[^.]* ..
-cd /var/www/blog
-rm -rf /var/www/blog/XVII-PP-workshops-2013
-git checkout workgate-2014
+cp /vagrant/data/var/www/blog/models/config.php ./models/config.php
 
 service apache2 restart
