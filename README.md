@@ -7,6 +7,7 @@ Repository with vagrant package for workshops organized by Wikia and vendors.
 
 * Virtualbox
 * Internet connection
+* Around 2 GB free disk space
 
 ## Get started
 
