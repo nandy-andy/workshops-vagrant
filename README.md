@@ -10,7 +10,7 @@ Repository with vagrant package for workshops organized by Wikia and vendors.
 
 ## Get started
 
-1. Install Virtualbox
+1. [Install Virtualbox](https://www.virtualbox.org/wiki/Downloads)
 2. Clone this repository
 3. Run vagrant up in a terminal
 4. Open `http://127.0.0.1:8080/` in your browser
