@@ -28,8 +28,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE IF NOT EXISTS `categories` (
   `category_id` int(12) NOT NULL AUTO_INCREMENT,
-  `name` varchar(128) NOT NULL,
-  PRIMARY KEY (`category_id`)
+  `name` varchar(128) NOT NULL
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
 
 --
@@ -56,7 +55,6 @@ CREATE TABLE IF NOT EXISTS `comments` (
   `website_url` varchar(256) DEFAULT NULL,
   `content` text NOT NULL,
   `posted_on` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  PRIMARY KEY (`post_id`,`comment_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 --
@@ -81,7 +79,6 @@ CREATE TABLE IF NOT EXISTS `posts` (
   `excerpt` varchar(256) NOT NULL,
   `content` text,
   `author` varchar(32) NOT NULL,
-  PRIMARY KEY (`post_id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=110 ;
 
 --
