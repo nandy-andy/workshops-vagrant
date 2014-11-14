@@ -11,9 +11,10 @@ Repository with vagrant package for workshops organized by Wikia and vendors.
 ## Get started
 
 1. [Install Virtualbox](https://www.virtualbox.org/wiki/Downloads)
-2. Clone this repository
-3. Run vagrant up in a terminal
-4. Open `http://127.0.0.1:8080/` in your browser
+2. [Install Vagrant](http://downloads.vagrantup.com/tags/v1.3.5)
+3. [Download this repository](https://github.com/nandy-andy/workshops-vagrant/archive/workgate-2014.zip)
+4. Run vagrant up in a terminal
+5. Open `http://127.0.0.1:8080/` in your browser
 
 ## Features
 
