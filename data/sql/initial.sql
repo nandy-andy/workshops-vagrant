@@ -27,9 +27,9 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE IF NOT EXISTS `categories` (
-  `category_id` int(12) NOT NULL AUTO_INCREMENT,
+  `category_id` int(12) NOT NULL,
   `name` varchar(128) NOT NULL
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `categories`
@@ -49,13 +49,13 @@ INSERT INTO `categories` (`category_id`, `name`) VALUES
 
 CREATE TABLE IF NOT EXISTS `comments` (
   `post_id` int(12) NOT NULL,
-  `comment_id` int(12) NOT NULL AUTO_INCREMENT,
+  `comment_id` int(12) NOT NULL,
   `name` varchar(128) NOT NULL,
   `email` varchar(64) DEFAULT NULL,
   `website_url` varchar(256) DEFAULT NULL,
   `content` text NOT NULL,
-  `posted_on` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+  `posted_on` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `comments`
@@ -73,13 +73,13 @@ INSERT INTO `comments` (`post_id`, `comment_id`, `name`, `email`, `website_url`,
 --
 
 CREATE TABLE IF NOT EXISTS `posts` (
-  `post_id` int(12) NOT NULL AUTO_INCREMENT,
+  `post_id` int(12) NOT NULL,
   `title` varchar(128) NOT NULL,
   `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `excerpt` varchar(256) NOT NULL,
   `content` text,
-  `author` varchar(32) NOT NULL,
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=110 ;
+  `author` varchar(32) NOT NULL
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `posts`
