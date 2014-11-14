@@ -16,6 +16,9 @@ Repository with vagrant package for workshops organized by Wikia and vendors.
 4. Run vagrant up in a terminal
 5. Open `http://127.0.0.1:8080/` in your browser
 
+### Known issues
+1. On Windows after installing VirtualBox and Vagrant the last didn't want to run because it couldn't find VirtualBox. To fix [it find path system variable](http://www.computerhope.com/issues/ch000549.htm) and add to its end path to your virtual box for example: `C:\Program Files\Oracle\VirtualBox`. Remember to put semicolon before adding it and restart terminal after adding it.
+
 ## Features
 
 * Apache2
