@@ -14,9 +14,11 @@ Repository with vagrant package for workshops organized by Wikia and vendors.
 1. [Install Virtualbox](https://www.virtualbox.org/wiki/Downloads)
 2. [Install Vagrant](http://downloads.vagrantup.com/tags/v1.3.5)
 3. [Download this repository](https://github.com/nandy-andy/workshops-vagrant/archive/workgate-2014.zip)
-4. Run vagrant up in a terminal
-5. Open `http://127.0.0.1:8080/` in your browser
-6. To enter our blog application you need to add this line to your [hosts file](http://en.wikipedia.org/wiki/Hosts_(file)):
+4. Unzip downloaded repository
+5. Open a terminal window and go to the unzipped directory 
+6. Once you are in the workshops directory run `vagrant up` in a terminal window
+7. Open `http://127.0.0.1:8080/` in your browser
+8. To enter our blog application you need to add this line to your [hosts file](http://en.wikipedia.org/wiki/Hosts_(file)):
 ```sh
 127.0.0.1       www.blog.lc
 ```
